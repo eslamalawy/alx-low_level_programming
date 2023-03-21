@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-    unsigned long long a = 1, b = 2, temp;
+    unsigned int a = 1, b = 2, c;
     int count;
 
-    printf("%llu, %llu", a, b);
+    printf("%d, %d", a, b);
+
     for (count = 3; count <= 98; count++) {
-        temp = a + b;
-        printf(", %llu", temp);
+        c = a + b;
+        printf(", %d", c);
         a = b;
-        b = temp;
+        b = c;
     }
 
     printf("\n");
