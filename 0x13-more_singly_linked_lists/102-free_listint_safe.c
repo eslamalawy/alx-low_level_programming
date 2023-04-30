@@ -40,7 +40,7 @@ size_t free_listint_safe(listint_t **h)
 	size_t i, num = 0;
 	listint_t **list = NULL;
 	listint_t *next;
-	listint_t *head = *h;
+	listint_t **head = h;
 
 	if (head == NULL || *head == NULL)
 		return (num);
